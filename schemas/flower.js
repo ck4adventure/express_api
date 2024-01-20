@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { FLOWER_COLORS, FLOWER_SIZES } from "../constants";
+import { FLOWER_COLORS, FLOWER_SIZES } from '../constants.js';
 const types = mongoose.Schema.Types
 
 export const flowerSchema = new mongoose.Schema({

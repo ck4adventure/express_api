@@ -17,10 +17,12 @@
   "scripts": {
     "run": "node index.js",
     "dev": "nodemon index.js",
-	"test": "mocha --require 'test/fixtures.js' --recursive './test/**/*.js' --exit"
+    "test": "mocha --require 'test/fixtures.js' --recursive './test/**/*.js' --exit"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
     "chai": "^4.3.10",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.4"
   }
 }

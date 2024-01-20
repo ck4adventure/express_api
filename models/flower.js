@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { flowerSchema } from "../schemas/flower";
+import { flowerSchema } from '../schemas/flower.js';
 import mongooseLeanVirtuals from "mongoose-lean-virtuals";
 
 
@@ -13,4 +13,4 @@ FlowerSchema.virtual('color_string').get(function(){
 
 FlowerSchema.plugin(mongooseLeanVirtuals);
 
-export const FlowerModel = mongoose.Model('flowers', FlowerSchema)
+export const FlowerModel = mongoose.model('flowers', FlowerSchema)
