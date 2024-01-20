@@ -8,12 +8,16 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
+    "mongodb-memory-server": "^9.1.6",
+    "mongoose": "^8.0.2",
+    "mongoose-lean-virtuals": "^0.9.1",
     "nodemon": "^3.0.2"
   },
   "type": "module",
   "scripts": {
     "run": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+	"test": "mocha --require 'test/fixtures.js' --recursive './test/**/*.js' --exit"
   },
   "devDependencies": {
     "chai": "^4.3.10",

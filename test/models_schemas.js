@@ -1,3 +1,4 @@
+import { expect } from "chai"
 describe('flowers schema and model', () => {
   // routes and controllers are 1:1 coupled here
   // routes test
