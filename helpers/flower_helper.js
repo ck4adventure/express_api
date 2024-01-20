@@ -5,7 +5,7 @@ const randomItemFromList = (list) => {
 }
 
 export const createRandomFlower = (name) => {
-	const n = name || faker.company.buzzNoun()
+	const n = name || faker.company.buzzAdjective() + ' ' + faker.science.chemicalElement()
 	return {
 		"name": n,
 	}

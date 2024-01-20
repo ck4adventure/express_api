@@ -3,10 +3,13 @@ import { FLOWER_COLORS, FLOWER_SIZES } from '../constants.js';
 const types = mongoose.Schema.Types
 
 export const flowerSchema = new mongoose.Schema({
-  name: {
-    type: types.String,
+  flower_id: {
+    type: types.Number,
     required: true,
-	unique: true,
+  },
+  has_thorns: {
+    type: types.Boolean,
+    required: true,
   },
 //   size: {
 // 	type: types.String,

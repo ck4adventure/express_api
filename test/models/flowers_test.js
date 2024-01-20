@@ -1,9 +1,9 @@
 import { expect } from "chai";
 
-import { FlowerModel } from '../models/flower.js'
+import { FlowerModel } from '../../models/flower.js'
 
 import fs from 'fs';
-import { createRandomFlower } from '../helpers/flower_helper.js'
+import { createRandomFlower } from '../../helpers/flower_helper.js'
 
 describe('flowers schema and model', () => {
   // routes and controllers are 1:1 coupled here
